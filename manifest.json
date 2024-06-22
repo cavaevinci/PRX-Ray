@@ -4,8 +4,15 @@
  "description": "PRX Ray Google Chrome extension",
  "manifest_version": 3,
  "author": "cavaevinci",
+ "permissions": ["activeTab"],
  "action": {
     "default_popup": "index.html",
     "default_title": "PRX Ray"
- }
+ },
+ "content_scripts": [
+   {
+       "matches": ["https://github.com/cavaevinci"],
+       "js": ["script.js"]
+   }
+]
 }
