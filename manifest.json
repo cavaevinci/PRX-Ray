@@ -11,7 +11,7 @@
  },
  "content_scripts": [
    {
-       "matches": ["https://github.com/cavaevinci"],
+       "matches": ["https://git.spectar.tv/MA/iOS/pulls/*/files"],
        "js": ["script.js"]
    }
 ]
