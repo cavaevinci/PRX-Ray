@@ -1,5 +1,3 @@
-alert("Script.js is working!"); 
-
 const fileSpans = document.querySelectorAll('span.file');
 fileSpans.forEach(span => {
     const filename = span.textContent.trim();
