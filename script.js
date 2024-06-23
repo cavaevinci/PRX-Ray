@@ -4,7 +4,7 @@ fileSpans.forEach(span => {
     console.log(filename);
 
     if (!filename.endsWith('.swift')) {
-        const foldButton = span.parentNode.querySelector('.fold-file'); // Adjust selector if needed
+        const foldButton = span.parentNode.querySelector('.fold-file');
         if (foldButton) {
             foldButton.click();
         } else {
