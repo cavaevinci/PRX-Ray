@@ -1,8 +1,5 @@
 # PRX-Ray Chrome Extension
 
-![_66e4a8b8-9df2-4832-a7ec-409a7c5e542c](https://github.com/cavaevinci/PRX-Ray/assets/112208299/4b422062-9476-4af5-8b76-06ed0a045e92)
-
-
 PRX-Ray is a Chrome extension designed to streamline your code review process on Gitea, a self-hosted Git service. It focuses on simplifying the viewing of pull requests (PRs) by automatically filtering and focusing on Swift files.
 
 ## Features
@@ -32,9 +29,4 @@ PRX-Ray is a Chrome extension designed to streamline your code review process on
 3. **Scroll to Swift:** The page will smoothly scroll to the first visible Swift file.
 4. **VPN Alert:** If you encounter a 403 error, you'll be prompted to connect to the VPN if it's required for access.
 
-## Future Enhancements
-
-- **File Type Customization:** Add options to filter by various file types and choose between folding and hiding.
-- **User Interface:** Enhance the popup's design and add more customization options.
-
-
+![_66e4a8b8-9df2-4832-a7ec-409a7c5e542c](https://github.com/cavaevinci/PRX-Ray/assets/112208299/4b422062-9476-4af5-8b76-06ed0a045e92)
