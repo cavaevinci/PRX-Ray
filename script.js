@@ -13,6 +13,16 @@ fetch(window.location.href)
                     }
                 }
             });
+            // After folding, scroll to the first visible .swift file
+            setTimeout(() => {
+            const swiftFiles = document.querySelectorAll('span.file');
+            for (const swiftFile of swiftFiles) {
+                if (swiftFile.textContent.trim().endsWith('.swift') && swiftFile.offsetParent !== null) {
+                    swiftFile.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    break; 
+                }
+            }
+            }, 500);
         }
     })
     .catch(error => {
