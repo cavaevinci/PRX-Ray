@@ -8,20 +8,32 @@
     <script src="popup.js"></script>
 </head>
 <body>
-    <div>
-        <p>PRX-Ray</p>
-        <h2>Filter Files</h2>
-        <label for="swiftCheckbox">.swift</label>
-        <input type="checkbox" id="swiftCheckbox" checked><br>
-        <label for="pngCheckbox">.png</label>
-        <input type="checkbox" id="pngCheckbox"><br>
-        <label for="jpgCheckbox">.jpg</label>
-        <input type="checkbox" id="jpgCheckbox"><br>
-        <label for="svgCheckbox">.svg</label>
-        <input type="checkbox" id="svgCheckbox"><br>
-        <p id="version">Version: </p> </div>
+    <div class="container">
+        <h1>PRX-Ray</h1>
+
+        <section class="filter-section">
+            <h2>Filter Files</h2>
+            <div class="checkbox-group">
+                <label for="swiftCheckbox">.swift</label>
+                <input type="checkbox" id="swiftCheckbox" checked>
+            </div>
+            <div class="checkbox-group">
+                <label for="pngCheckbox">.png</label>
+                <input type="checkbox" id="pngCheckbox">
+            </div>
+            <div class="checkbox-group">
+                <label for="jpgCheckbox">.jpg</label>
+                <input type="checkbox" id="jpgCheckbox">
+            </div>
+            <div class="checkbox-group">
+                <label for="svgCheckbox">.svg</label>
+                <input type="checkbox" id="svgCheckbox">
+            </div>
+        </section>
+
+        <footer>
+            <p id="version">Version: </p>
+        </footer>
     </div>
-
-
 </body>
 </html>

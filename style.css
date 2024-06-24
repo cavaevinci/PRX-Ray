@@ -1,10 +1,40 @@
 body {
-    width: 150px;
-    height: 150px;
-    background-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-div {
-    display: grid;
-    place-items: center;
+.container {
+    width: 250px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.filter-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
 }
