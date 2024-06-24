@@ -1,6 +1,6 @@
 {
  "name": "PRX-Ray",
- "version": "0.0.2",
+ "version": "0.0.1",
  "description": "PRX Ray Google Chrome extension",
  "manifest_version": 3,
  "author": "cavaevinci",
@@ -12,7 +12,7 @@
  "content_scripts": [
    {
        "matches": ["https://git.spectar.tv/MA/iOS/pulls/*/files"],
-       "js": ["script.js"]
+       "js": ["js/script.js"]
    }
 ]
 }
