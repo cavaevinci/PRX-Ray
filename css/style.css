@@ -11,26 +11,8 @@ body {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1 {
     color: #333;
-}
-
-.filter-section {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-label {
-    margin-right: 5px;
 }
 
 footer {

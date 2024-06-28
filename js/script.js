@@ -1,32 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    checkCheckboxes();
-    const checkboxes = document.querySelectorAll('.checkbox');
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-            saveCheckboxValue(this.id, this.checked);
-        });
-    });
-});
-
-function saveCheckboxValue(checkboxId, checked) {
-    localStorage.setItem(checkboxId, checked);
-}
-
-function checkCheckboxes() {
-    const checkboxes = document.querySelectorAll('.checkbox');
-
-    checkboxes.forEach(checkbox => {
-        const checkboxId = checkbox.id;
-        const savedValue = localStorage.getItem(checkboxId);
-
-        if (savedValue === 'true') {
-            checkbox.checked = true;
-        } else if (savedValue === 'false') {
-            checkbox.checked = false;
-        }
-    });
-}
-
 async function handleGiteaPullRequest() {
     try {
         const response = await fetch(window.location.href);
@@ -67,5 +38,4 @@ async function handleGiteaPullRequest() {
     }
 }
 
-checkCheckboxes();
 handleGiteaPullRequest();
