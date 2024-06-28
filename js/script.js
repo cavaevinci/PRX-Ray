@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    checkCheckboxes();
+    const checkboxes = document.querySelectorAll('.checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            saveCheckboxValue(this.id, this.checked);
+        });
+    });
+});
+
 function saveCheckboxValue(checkboxId, checked) {
     localStorage.setItem(checkboxId, checked);
 }
@@ -16,18 +26,6 @@ function checkCheckboxes() {
         }
     });
 }
-
-// Event listener for checkbox change
-document.addEventListener('DOMContentLoaded', () => {
-    checkCheckboxes();
-
-    const checkboxes = document.querySelectorAll('.checkbox');
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-            saveCheckboxValue(this.id, this.checked);
-        });
-    });
-});
 
 async function handleGiteaPullRequest() {
     try {
